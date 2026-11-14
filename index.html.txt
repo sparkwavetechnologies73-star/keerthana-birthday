@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe3ed">
+<title>For Keerthana 💗</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+--pink:#e879a4;
+--dark:#a9406d;
+--light:#fff0f5;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+background:linear-gradient(135deg,#fff5f8,#ffe1ec,#fff0f5);
+color:#88405f;
+font-family:Poppins,sans-serif;
+overflow-x:hidden;
+}
+button{font-family:inherit}
+h1,h2{font-family:'Playfair Display',serif}
+h1{color:#c64d7c;font-size:clamp(40px,9vw,76px)}
+h2{color:#c64d7c;font-size:clamp(28px,6vw,43px);margin-bottom:20px}
+p{line-height:1.9}
+section{
+min-height:100vh;padding:85px 20px;
+display:flex;flex-direction:column;
+justify-content:center;align-items:center;
+text-align:center;position:relative;
+}
+.hidden{display:none!important}
+.script{font-family:'Dancing Script',cursive;font-size:clamp(30px,6vw,48px);color:#d65c8d}
+.small{font-size:11px;letter-spacing:5px;color:#ad6581}
+.btn{
+border:0;border-radius:40px;padding:14px 28px;
+margin:12px 5px;color:white;
+background:linear-gradient(135deg,#f39cbb,#d95488);
+box-shadow:0 8px 22px #d9548840;
+cursor:pointer;font-size:14px;transition:.3s;
+}
+.btn:hover{transform:translateY(-4px) scale(1.04)}
+.card{
+width:min(650px,100%);padding:32px 25px;
+background:#ffffffc9;border:1px solid white;
+border-radius:28px;box-shadow:0 15px 45px #c86c9230;
+backdrop-filter:blur(12px);margin:20px auto;
+}
+.music-btn{
+position:fixed;right:17px;top:17px;z-index:100;
+border:0;width:48px;height:48px;border-radius:50%;
+background:#d85c8d;color:white;font-size:22px;cursor:pointer;
+box-shadow:0 5px 20px #d85c8d60;
+}
+.progress{position:fixed;top:0;left:0;width:0;height:4px;background:#d95488;z-index:200}
+.divider{width:100px;height:2px;background:linear-gradient(90deg,transparent,#e58aab,transparent);margin:20px auto}
+.heart{font-size:65px;animation:heartbeat 1.4s infinite}
+@keyframes heartbeat{50%{transform:scale(1.2)}}
+.floating{position:fixed;bottom:-50px;pointer-events:none;z-index:2;animation:floatUp linear forwards}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(400deg);opacity:0}}
+.hero-decoration{font-size:35px;margin:18px;animation:heartbeat 2s infinite}
+.cake{font-size:125px;cursor:pointer;animation:bounce 2s infinite;filter:drop-shadow(0 8px 12px #db709355)}
+@keyframes bounce{50%{transform:translateY(-13px)}}
+.flames{font-size:27px;letter-spacing:8px;animation:flicker .5s infinite alternate}
+@keyframes flicker{to{opacity:.55;transform:scale(.92)}}
+.letter{text-align:left;min-height:280px;font-family:'Dancing Script',cursive;font-size:23px;line-height:1.8;color:#914765;white-space:pre-wrap}
+.letter-sign{text-align:right;font-family:'Dancing Script',cursive;font-size:28px}
+.gift{font-size:110px;cursor:pointer;display:inline-block;animation:giftShake 2s infinite}
+@keyframes giftShake{0%,85%,100%{transform:rotate(0)}90%{transform:rotate(-10deg)}95%{transform:rotate(10deg)}}
+.reveal{background:#fff0f5;border-radius:20px;padding:25px;margin-top:20px;animation:appear .7s ease}
+@keyframes appear{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.secrets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;width:min(600px,100%)}
+.secret{border:1px solid white;background:#ffffffc9;min-height:135px;padding:18px 10px;border-radius:20px;color:#b44e79;cursor:pointer;box-shadow:0 7px 20px #d47a9a20;transition:.3s}
+.secret:hover{transform:translateY(-5px)}
+.secret .emoji{font-size:35px}
+.secret .message{font-size:13px;line-height:1.7;margin-top:12px}
+.secret.opened{background:#ffe0eb}
+.reason-number{font-size:13px;letter-spacing:3px;color:#ba7190}
+.reason-text{font-family:'Dancing Script',cursive;font-size:clamp(27px,6vw,39px);color:#c64d7c;min-height:105px;display:flex;justify-content:center;align-items:center}
+.reason-count{font-size:12px;color:#b77a93}
+.reason-progress{width:100%;height:6px;background:#f8dce7;border-radius:20px;overflow:hidden;margin:20px 0}
+.reason-progress div{height:100%;width:1%;background:#d85c8d;transition:.4s}
+#final{background:radial-gradient(circle at center,#fff0f5,#ffcddd,#fff0f5)}
+.final-heart{font-size:90px}
+.final-name{font-family:'Dancing Script',cursive;font-size:clamp(50px,11vw,90px);color:#ce4e83}
+#fireworks{position:fixed;inset:0;width:100%;height:100%;z-index:5;pointer-events:none}
+footer{background:#f5bfd2;padding:30px 15px;text-align:center;color:#954563;font-size:12px}
+@media(max-width:450px){.card{padding:25px 17px}.secrets{gap:9px}.secret{min-height:125px}}
+</style>
+</head>
+
+<body>
+<canvas id="fireworks"></canvas>
+<div class="progress" id="progress"></div>
+
+<button class="music-btn" id="musicButton" onclick="toggleMusic()">♫</button>
+
+<!-- WELCOME -->
+<section id="home">
+<p class="small">A SPECIAL SURPRISE FOR SOMEONE SPECIAL</p>
+<div class="hero-decoration">🌸 🦋 🌸</div>
+<div class="heart">💗</div>
+<p class="script">Today is all about you...</p>
+<h1>Happy Birthday</h1>
+<h1>Keerthana!</h1>
+<div class="divider"></div>
+<p>A little website, a thousand feelings, and countless wishes made just for you.</p>
+<button class="btn" onclick="startJourney()">Open Your Surprise 💌</button>
+<p class="small">SCROLL INTO YOUR SPECIAL DAY ✨</p>
+</section>
+
+<!-- CAKE -->
+<section id="cake" class="hidden">
+<p class="small">CHAPTER 01</p>
+<h2>Your Special Birthday Cake 🎂</h2>
+<div class="card">
+<div class="flames" id="flames">🕯️ 🕯️ 🕯️</div>
+<div class="cake" onclick="blowCandles()">🎂</div>
+<p id="cakeText">Close your eyes, make a wish and blow your candles!</p>
+<button class="btn" onclick="blowCandles()">Blow Candles ✨</button>
+</div>
+<button class="btn" onclick="goTo('letter')">Next Surprise 💌</button>
+</section>
+
+<!-- LETTER -->
+<section id="letter" class="hidden">
+<p class="small">CHAPTER 02</p>
+<h2>A Letter From My Heart 💌</h2>
+<div class="card">
+<div style="font-size:38px">💗</div>
+<div class="letter" id="typed"></div>
+<div id="signature" class="letter-sign hidden">With lots of love, ❤️</div>
+<button class="btn" id="letterNext" onclick="goTo('gift')" hidden>Open Your Gift 🎁</button>
+</div>
+</section>
+
+<!-- GIFT -->
+<section id="gift" class="hidden">
+<p class="small">CHAPTER 03</p>
+<h2>A Little Gift For You 🎁</h2>
+<div class="card">
+<div class="gift" id="giftBox" onclick="openGift()">🎁</div>
+<p>Tap the gift box and see what is waiting inside!</p>
+<div class="reveal hidden" id="giftReveal">
+<div style="font-size:45px">💝</div>
+<h2>You Are Special!</h2>
+<p>If happiness had a face, it would be a beautiful smile like yours. May life always give you reasons to smile.</p>
+<p>May you have the sweetest things! 🌷</p>
+<button class="btn" onclick="goTo('secrets')">Discover Secret Messages 💗</button>
+</div>
+</div>
+</section>
+
+<!-- SECRETS -->
+<section id="secrets" class="hidden">
+<p class="small">CHAPTER 04</p>
+<h2>Seven Little Secrets 💌</h2>
+<p>Every heart has something beautiful to say...</p>
+<div class="secrets" id="secretGrid"></div>
+<p id="secretCount">0 / 7 secrets discovered</p>
+<button class="btn" id="secretNext" onclick="goTo('reasons')" disabled>Discover More ❤️</button>
+</section>
+
+<!-- REASONS -->
+<section id="reasons" class="hidden">
+<p class="small">CHAPTER 05</p>
+<h2>100 Reasons To Smile 🌸</h2>
+<p>A hundred little reminders of how wonderful you are.</p>
+<div class="card">
+<p class="reason-number" id="reasonNumber">REASON 01 / 100</p>
+<div class="divider"></div>
+<div class="reason-text" id="reasonText">Your beautiful smile. 💗</div>
+<div class="reason-progress"><div id="reasonBar"></div></div>
+<p class="reason-count" id="reasonCount">1 of 100</p>
+<button class="btn" onclick="previousReason()">← Previous</button>
+<button class="btn" onclick="nextReason()">Next Reason →</button>
+</div>
+<button class="btn" onclick="goTo('final')">The Grand Finale ✨</button>
+</section>
+
+<!-- FINALE -->
+<section id="final" class="hidden">
+<p class="small">THE LAST CHAPTER</p>
+<div class="final-heart">💖</div>
+<p class="script">This little world is made for you...</p>
+<h1>Happy Birthday</h1>
+<div class="final-name">Keerthana</div>
+<div class="card">
+<p>May your life be filled with endless laughter, unforgettable memories, beautiful surprises, and all the happiness your heart can hold.</p>
+<div class="divider"></div>
+<h2>Keep Shining, Beautiful! 🦋</h2>
+<p>You deserve every beautiful thing in this universe.</p>
+<p style="font-size:28px;margin-top:15px">🌸 💗 🌷</p>
+</div>
+<button class="btn" onclick="grandFinale()">Celebrate Again! 🎆</button>
+<button class="btn" onclick="goTo('home')">Replay Your Surprise ↻</button>
+</section>
+
+<footer>Made with 💗 especially for Keerthana.<br>A little surprise that comes straight from the heart.</footer>
+
+<script>
+/* NAVIGATION */
+const sections=['home','cake','letter','gift','secrets','reasons','final'];
+
+function goTo(id){
+sections.forEach(s=>document.getElementById(s).classList.add('hidden'));
+document.getElementById(id).classList.remove('hidden');
+window.scrollTo({top:0,behavior:'smooth'});
+document.getElementById('progress').style.width=((sections.indexOf(id)/(sections.length-1))*100)+'%';
+if(id==='letter')startTyping();
+if(id==='final')grandFinale();
+}
+function startJourney(){goTo('cake');party(25);}
+
+/* CAKE */
+let candlesBlown=false;
+function blowCandles(){
+if(candlesBlown)return;
+candlesBlown=true;
+document.getElementById('flames').innerHTML='💨 💨 💨';
+document.getElementById('cakeText').textContent='Your wish has been sent to the universe! May it come true! 💗';
+party(35);
+}
+
+/* LETTER */
+const letterMessage=`Dear Keerthana,
+
+Some people enter our lives and make ordinary moments feel extraordinary.
+
+You are one of those beautiful souls who deserve happiness in every little moment.
+
+On your birthday, I wish you endless smiles, wonderful opportunities, beautiful memories and dreams that turn into reality.
+
+May every new day bring you something to be grateful for.
+
+Never lose your beautiful smile. Never stop dreaming. And always remember that you are special.
+
+Today, tomorrow and always, you deserve all the happiness in this world.
+
+Happy Birthday! ❤️`;
+
+let typedStarted=false;
+function startTyping(){
+if(typedStarted)return;
+typedStarted=true;
+const el=document.getElementById('typed');
+let i=0;
+function type(){
+if(i<letterMessage.length){
+el.textContent+=letterMessage.charAt(i++);
+setTimeout(type,32);
+}else{
+document.getElementById('signature').classList.remove('hidden');
+document.getElementById('letterNext').hidden=false;
+}
+}
+type();
+}
+
+/* GIFT */
+let giftOpened=false;
+function openGift(){
+if(giftOpened)return;
+giftOpened=true;
+document.getElementById('giftBox').innerHTML='💝';
+document.getElementById('giftReveal').classList.remove('hidden');
+party(30);
+}
+
+/* SEVEN SECRETS */
+const secrets=[
+['🌷','A beautiful soul','Your presence makes ordinary moments feel special.'],
+['💗','A little reminder','You deserve happiness, even on your difficult days.'],
+['🦋','Keep dreaming','Never let the world stop you from chasing your dreams.'],
+['✨','Your magic','Your uniqueness is something truly beautiful.'],
+['🌸','Stay happy','May your smile always find its way back to you.'],
+['🎀','A sweet wish','May every year bring you more love and success.'],
+['💝','The biggest secret','You are more special than words can ever explain.']
+];
+
+let secretsOpened=0;
+const secretGrid=document.getElementById('secretGrid');
+secrets.forEach((s,i)=>{
+const card=document.createElement('button');
+card.className='secret';
+card.innerHTML=`<div class="emoji">🔒</div><p>Secret ${i+1}</p>`;
+card.onclick=()=>{
+if(card.classList.contains('opened'))return;
+card.classList.add('opened');
+card.innerHTML=`<div class="emoji">${s[0]}</div><b>${s[1]}</b><p class="message">${s[2]}</p>`;
+secretsOpened++;
+document.getElementById('secretCount').textContent=secretsOpened+' / 7 secrets discovered';
+if(secretsOpened===7){
+document.getElementById('secretNext').disabled=false;
+document.getElementById('secretNext').textContent='All Secrets Discovered! Next ❤️';
+party(25);
+}
+};
+secretGrid.appendChild(card);
+});
+
+/* 100 REASONS */
+const reasons=[
+"Your beautiful smile.","Your kind heart.","The way you make people feel special.","Your unique personality.","Your beautiful dreams.",
+"Your strength.","Your courage.","Your lovely laugh.","Your positive energy.","The happiness you bring.",
+"Your kindness towards others.","Your wonderful imagination.","Your little achievements.","Your determination.","Your beautiful eyes.",
+"Your sweet nature.","Your ability to keep going.","Your honesty.","Your warm heart.","Your special way of seeing the world.",
+"Your lovely conversations.","Your enthusiasm.","Your creativity.","Your patience.","Your thoughtful nature.",
+"Your sense of humour.","Your confidence.","Your individuality.","Your curiosity.","Your passion for life.",
+"Your generosity.","Your beautiful memories.","Your hopeful spirit.","Your caring nature.","Your ability to inspire.",
+"Your dreams for tomorrow.","Your lovely expressions.","Your little surprises.","Your graceful personality.","Your willingness to learn.",
+"Your strength during hard times.","Your gentle heart.","Your determination to succeed.","Your beautiful energy.","Your wonderful presence.",
+"Your ability to make moments memorable.","Your kindness in little things.","Your enthusiasm for new adventures.","Your originality.","Your bright future.",
+"Your beautiful thoughts.","Your courage to be yourself.","Your cheerful moments.","Your lovely voice.","Your amazing potential.",
+"Your ability to bring joy.","Your unforgettable personality.","Your positive attitude.","Your dreams and ambitions.","Your resilience.",
+"Your beautiful spirit.","Your love for little things.","Your sweet memories.","Your willingness to grow.","Your thoughtful words.",
+"Your lovely smile on happy days.","Your strength on difficult days.","Your special little habits.","Your beautiful imagination.","Your ability to make others laugh.",
+"Your uniqueness.","Your endless possibilities.","Your beautiful journey.","Your little victories.","Your confidence to try again.",
+"Your wonderful character.","Your hope for the future.","Your appreciation of life.","Your lovely personality.","Your courage to dream big.",
+"Your kindness that matters.","Your beautiful heart.","Your amazing potential to shine.","Your special place in this world.","Your ability to make a difference.",
+"Your lovely memories yet to come.","Your beautiful tomorrow.","Your endless opportunities.","Your growth every year.","Your strength to overcome.",
+"Your ability to spread happiness.","Your special birthday glow.","Your future success.","Your beautiful dreams coming true.","Your happiness matters.",
+"Your smile is worth celebrating.","Simply because you are YOU.","And a hundred more reasons to celebrate you!"
+];
+
+let reasonIndex=0;
+function updateReason(){
+document.getElementById('reasonNumber').textContent='REASON '+String(reasonIndex+1).padStart(2,'0')+' / 100';
+document.getElementById('reasonText').textContent=reasons[reasonIndex];
+document.getElementById('reasonCount').textContent=(reasonIndex+1)+' of 100';
+document.getElementById('reasonBar').style.width=(reasonIndex+1)+'%';
+}
+function nextReason(){if(reasonIndex<99)reasonIndex++;else reasonIndex=0;updateReason();}
+function previousReason(){if(reasonIndex>0)reasonIndex--;updateReason();}
+updateReason();
+
+/* FLOATING DECORATIONS */
+const symbols=['💗','💕','🌸','🌷','🦋','✨','💖','🌹'];
+function floating(){
+const el=document.createElement('div');
+el.className='floating';
+el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+el.style.left=Math.random()*100+'vw';
+el.style.fontSize=(17+Math.random()*23)+'px';
+el.style.animationDuration=(5+Math.random()*5)+'s';
+document.body.appendChild(el);
+setTimeout(()=>el.remove(),10500);
+}
+setInterval(floating,750);
+
+function party(amount=30){
+for(let i=0;i<amount;i++){
+const el=document.createElement('div');
+el.className='floating';
+el.textContent=['💗','🌸','✨','🎀','🦋','🌷'][Math.floor(Math.random()*6)];
+el.style.left=Math.random()*100+'vw';
+el.style.fontSize=(20+Math.random()*24)+'px';
+el.style.animationDuration=(3+Math.random()*4)+'s';
+document.body.appendChild(el);
+setTimeout(()=>el.remove(),8000);
+}
+}
+
+/* FIREWORKS */
+const canvas=document.getElementById('fireworks');
+const ctx=canvas.getContext('2d');
+let particles=[];
+function resizeCanvas(){
+canvas.width=window.innerWidth*devicePixelRatio;
+canvas.height=window.innerHeight*devicePixelRatio;
+ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+}
+window.addEventListener('resize',resizeCanvas);
+resizeCanvas();
+
+function burst(x,y){
+const colors=['#ff6f9e','#ffd166','#ffffff','#ed8db4','#c9a2ff'];
+for(let i=0;i<65;i++){
+const angle=Math.random()*Math.PI*2;
+const speed=1.5+Math.random()*5;
+particles.push({x,y,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed,life:1,color:colors[Math.floor(Math.random()*colors.length)],size:1+Math.random()*2.5});
+}
+}
+function drawFireworks(){
+ctx.clearRect(0,0,innerWidth,innerHeight);
+particles=particles.filter(p=>p.life>0.03);
+particles.forEach(p=>{
+p.x+=p.vx;p.y+=p.vy;p.vy+=0.035;p.life-=0.014;
+ctx.globalAlpha=p.life;ctx.fillStyle=p.color;
+ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,Math.PI*2);ctx.fill();
+});
+ctx.globalAlpha=1;
+requestAnimationFrame(drawFireworks);
+}
+drawFireworks();
+
+let fireworkTimer=null;
+function grandFinale(){
+if(fireworkTimer)clearInterval(fireworkTimer);
+party(45);
+for(let i=0;i<5;i++){
+setTimeout(()=>burst(70+Math.random()*(innerWidth-140),80+Math.random()*(innerHeight*.55)),i*450);
+}
+fireworkTimer=setInterval(()=>{
+burst(50+Math.random()*(innerWidth-100),70+Math.random()*(innerHeight*.5));
+},1300);
+setTimeout(()=>{
+clearInterval(fireworkTimer);
+fireworkTimer=null;
+},10000);
+}
+
+/* CLASSIC HAPPY BIRTHDAY MUSIC */
+let audioContext=null;
+let musicOn=false;
+let musicTimer=null;
+let notePosition=0;
+let activeOscillators=[];
+
+const beat=0.38;
+const melody=[
+[261.63,1],[261.63,1],[293.66,2],[261.63,2],[349.23,2],[329.63,4],
+[261.63,1],[261.63,1],[293.66,2],[261.63,2],[392.00,2],[349.23,4],
+[261.63,1],[261.63,1],[523.25,2],[440.00,2],[349.23,2],[329.63,2],[293.66,4],
+[466.16,1],[466.16,1],[440.00,2],[349.23,2],[392.00,2],[349.23,4]
+];
+
+function playBirthdayNote(){
+if(!musicOn||!audioContext)return;
+
+const [frequency,duration]=melody[notePosition%melody.length];
+notePosition++;
+
+const now=audioContext.currentTime;
+const osc=audioContext.createOscillator();
+const gain=audioContext.createGain();
+
+osc.type='triangle';
+osc.frequency.setValueAtTime(frequency,now);
+
+gain.gain.setValueAtTime(0.001,now);
+gain.gain.exponentialRampToValueAtTime(0.12,now+0.04);
+gain.gain.exponentialRampToValueAtTime(0.001,now+duration*beat);
+
+osc.connect(gain);
+gain.connect(audioContext.destination);
+osc.start(now);
+osc.stop(now+duration*beat+0.05);
+
+activeOscillators.push(osc);
+osc.onended=()=>{
+activeOscillators=activeOscillators.filter(item=>item!==osc);
+};
+
+musicTimer=setTimeout(playBirthdayNote,duration*beat*1000);
+}
+
+async function toggleMusic(){
+const btn=document.getElementById('musicButton');
+
+if(!musicOn){
+const AudioAPI=window.AudioContext||window.webkitAudioContext;
+if(!AudioAPI){
+alert('Audio is not supported in this browser.');
+return;
+}
+
+audioContext=audioContext||new AudioAPI();
+await audioContext.resume();
+
+musicOn=true;
+notePosition=0;
+btn.textContent='♫';
+btn.style.background='#c64d7c';
+playBirthdayNote();
+
+}else{
+musicOn=false;
+clearTimeout(musicTimer);
+
+activeOscillators.forEach(osc=>{
+try{osc.stop();}catch(e){}
+});
+activeOscillators=[];
+
+btn.textContent='♪';
+btn.style.background='#d85c8d';
+}
+}
+</script>
+</body>
+</html>
